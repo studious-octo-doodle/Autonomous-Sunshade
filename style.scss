@@ -1,0 +1,106 @@
+@import "compass/css3";
+/* The version of Bourbon used in this Pen was 4.* */
+@import "bourbon";
+
+body {
+  padding: 37px;
+  color: #5e5d52;
+  align-items: center;
+   justify-content: center;
+}
+
+.containerbtn {
+   display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+/* text recolor */
+h1, p {
+  color: #990033 !important;
+  text-align: center;
+}
+
+a {
+  color: #ffb310 !important;
+  text-align: center;
+  font-size: 1.2em;
+}
+
+/* button recolor */
+.nav-pills > li.active > a, .btn-up {
+  background-color: #990033 !important;
+  border-color: #990033 !important;
+  border-radius: 25px;
+  //box-shadow: 10px 10px 5px #FFCB5C;
+}
+
+.btn-down {
+  background-color: #990033 !important;
+  border-color: #990033 !important;
+  border-radius: 25px;
+  margin-left: 115px;
+  //box-shadow: 10px 10px 5px #FFCB5C;
+} 
+.btn-info {
+  background-color: #990033 !important;
+  border-color: #990033 !important;
+  border-radius: 25px;
+  //box-shadow: 10px 10px 5px #FFCB5C;
+} 
+
+button.btn-up:hover {
+  	background: -webkit-linear-gradient(bottom, #f08139 0%, #b70815 100%);
+} 
+button.btn-down:hover {
+  	background: -webkit-linear-gradient(bottom, #f08139 0%, #b70815 100%);
+} 
+
+@-webkit-keyframes seesaw {
+  0% {
+      -webkit-transform: rotate(-2deg);
+  }
+  50% {
+      -webkit-transform: rotate(1deg);
+  }
+}
+
+a {
+  color: #337aa8;
+}
+a:hover, a:focus {
+  color: #4b8ab2;
+}
+
+table {
+  width: 100%;
+  border-top: 1px solid #ccc;
+  border-left: 1px solid #ccc;
+  border-collapse: collapse;
+  margin-bottom: 1em;
+}
+table th, table td {
+  padding: 0.5em 1em;
+  border-bottom: 1px solid #ccc;
+  border-right: 1px solid #ccc;
+  white-space: pre;
+}
+table thead th,
+table tbody td {
+  text-align: center;
+}
+table thead {
+  color: #FFCB5C;
+  background: #fb0054;
+  text-shadow: 3px 3px 5px #000000;
+}
+table thead th {
+  padding: 1em;
+}
+table[data-comparing="active"] tbody th {
+  border-bottom: none;
+  font-size: 0.75em;
+  color: #767676;
+  padding-bottom: 0;
+}

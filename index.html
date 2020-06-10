@@ -1,0 +1,75 @@
+<title>It's Always Sunny In Arizona</title>
+<p style="margin-left: 2.5em;padding: 0 7em 2em 0;"></p>
+<div class="container-fluid" ng-app="tabApp">
+<div class="row" ng-controller="TabController">
+<div class="col-md-2">
+<ul class="nav nav-pills nav-stacked">
+<li ng-class="{ active: isSet(1) }">
+<a href ng-click="setTab(1)">Home</a>
+</li>
+<li ng-class="{ active: isSet(2) }">
+<a href ng-click="setTab(2)">Status Report</a>
+</li>
+<li ng-class="{ active: isSet(3) }">
+<a href ng-click="setTab(3)">About Us</a>
+</li>
+</ul>
+</div>
+<div class="col-md-8">
+<div class="jumbotron">
+<div ng-show="isSet(1)">
+<h1>It's Always Sunny In Arizona</h1>
+<p>Welcome to the website!</p>
+
+    <div class="containerbtn">
+    <button class="btn btn-up btn-lg"><a>Raise Shade</a></button>
+    
+    <button class="btn btn-down btn-lg"><a>Lower Shade</a></button> 
+</div>
+  <!-- Weather App -->
+  <h1 class="text-center title">Local Weather App</h1>
+    <h1 class="text-center" id="location"></h1>
+    <h2 class="text-center"><span id="weather-icons"></span> <span id="temp"></span></h2>
+    <div class="text-center"><button class="btn btn-info" id="change-temp">Switch to &#8457;</i></button></div>
+    <h2 class="text-center top-spacing">Get Weather by Zip Code</h2>
+    <div class="form-group text-center">
+      <label for="zip">Zip Code:</label>
+      <input type="text" class="form-control" id="zip">
+      <button class="btn btn-info" id="getWeather">Get Weather</button>
+    </div>
+  </div> 
+  <div ng-show="isSet(2)">
+<h1>Status Report</h1>
+<div class="table">
+<table class="responsive-table">
+<thead>
+<tr>
+<th scope="col"></th>
+<th scope="col">Lower Shade Threshold</th>
+<th scope="col">Lower Anomalies/Anomaly Limit</th>
+<th scope="col">Raise Shade Threshold</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<th scope="row">Wind</th>
+<td>line 1</td>
+<tr>
+<th scope="row">Temperature</th>
+<td>line 2</td>
+<tr>
+<th scope="row">Lux</th>
+<td>line 3</td>
+</tr>
+<tr>
+</tbody>
+</table>
+</div>
+</div>
+<div ng-show="isSet(3)">
+<h1>About </h1>
+<p> Some messages </p>
+</div>
+</div>
+</div>
+</div>
